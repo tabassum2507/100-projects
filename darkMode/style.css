@@ -98,4 +98,9 @@ body{
   
 }
 
-.darkMode
+.darkMode input:checked ~ .box {
+    transform: rotate(180deg);
+} 
+.darkMode input :checked ~ .box {
+    transform :
+}
