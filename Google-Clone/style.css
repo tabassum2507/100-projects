@@ -11,15 +11,15 @@ body{
 }
 
 .box{
-    padding-top: 10vh;
+    padding-top: 20vh;
     text-align: center;
     padding-bottom: 20px;
     margin-bottom: 25vh;
 }
 
 .logo{
-    padding-bottom: 15px;
-    height: 200px;
+    height: 85px;
+    margin-bottom: 30px;
 }
 
 .searchbox {
@@ -109,7 +109,6 @@ button:hover {
 }
 
 
-
 .btn,
 .btn:active {
     color: white;
@@ -179,5 +178,5 @@ footer {
 
 .left-side {
     float: right;
-    margin-right: 20px;
+   
 }
