@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Ubuntu&display=swap');
+
+*{
+  margin:0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4rem;
+  padding: 4rem;
+  margin: 0 auto;
+  width: max-content;
+}
+
+.box {
+  height: 30vh;
+  width: 20vw;
+  border: 0.1px solid #FEF5ED;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.151);
+  transition: all .2s ease-in-out;
+}
+
+.box:hover {
+ transform: scale(1.1);
+}
+
+.text {
+  margin: 0;
+  font-size: 1.5em;
+  color: white ;
+  display: flex;
+  align-items: center;
+  margin-top: 65px;
+  justify-content: center;
+  text-shadow: 1px 1px #66806A;
+}
+
+.box1 {
+  background: linear-gradient(
+  to bottom right,
+  #6889ff, #C668ff);
+}
+
+.box2 {
+  background: linear-gradient(
+    to bottom right,
+    #ff6868, #ff68de
+  );
+}
+
+.box3 {
+  background: linear-gradient(
+    to bottom right,
+    #fdc639, #ff7c60
+  );
+}
+
+.box4 {
+  background: linear-gradient(
+    to bottom right,
+    #403f44, #1e1b32
+  );
+}
+
+.box5 {
+  background: linear-gradient(
+    to bottom right,
+    #ff9e68, #ff68de
+  );
+}
+
+.box6 {
+  background: linear-gradient(
+    to bottom right,
+    #45c270, #21cdc3
+  );
+}
+
+.box7 {
+  background: linear-gradient(
+    to bottom right,
+    #5b7fff, #33ccfc
+  );
+}
