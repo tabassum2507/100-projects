@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Poppins:wght@200;400&family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom right, #6889ff, #c668ff);
+}
+
+#form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#name {
+  width: 25vw;
+  padding: 8px;
+  border: 2px solid #d9d9d9;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+}
+
+#name:focus {
+  outline: none;
+  border: 2px solid #4d90fe;
+}
+
+.weather {
+  text-align: center;
+  font-size: 2rem;
+}
+.weather h2 {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
