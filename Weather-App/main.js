@@ -2,7 +2,7 @@ const APIKey = "25532bbb8cad63d4c4284fa0e73a5868";
 const main = document.getElementById("main");
 const form = document.getElementById("form");
 const search = document.getElementById("name");
-const url = (city) => `api.openweathermap.org/data/2.5/weather?q={city}&appid={APIKey}`;
+const url = (city) => `https://api.openweathermap.org/data/2.5/weather?q={city}&appid={APIKey}`;
 
 
 async function getWeatherByLocation(city) {
