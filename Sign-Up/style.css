@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Poppins:wght@200;400&family=Ubuntu&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -22,30 +24,29 @@
 
 .Click_me {
     font-size: 1rem;
-    font-weight: 600;
     padding: 1rem 3rem;
-    background-color: brown;
+    background-color: #30475E;
     color: white;
 
 }
 
 .Click_me:hover {
-    box-shadow: 0rem 0.5rem 0.7rem #f57ad2;
+    box-shadow: 0rem 0.5rem 0.7rem #7E8A97;
     transform: translateY(-0.25rem);
 }
 
 .Click_me:active {
     transform: translateY(-0.2rem);
-    box-shadow: 0rem 0.4rem 0.6rem #8f0a69;
+    box-shadow: 0rem 0.4rem 0.6rem #7E8A97;
 }
 
 .log_in_form {
     height: 100vh;
-    height: 100%;
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #b74096;
+    background-color: #7E8A97;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,12 +63,15 @@
     transition: all 0.5s;
     flex-direction: column;
     background-color: white;
-    width: 50%;
+    width: 30%;
     border-radius: 15px;
+    box-shadow: 1 20px 10px rgba(0, 0, 0, 0.121);
 }
 
 .form h3{
     align-self: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
     margin-top: 1rem;
     margin-bottom: 1rem;
     color: grey;
@@ -75,24 +79,36 @@
 
 .form > * {
     margin: 0 1rem;
+    font-family: 'Poppins', sans-serif;
+
 }
 
-.form > input {
-    height: 1.5rem;
-    border-radius: none;
-    border-bottom: 1px solid #b1b1b1;
-    font-size: 0.7rem;
-    font-weight: 900;
-    margin-bottom: 1rem;
+.form_input > input {
+    width: 26vw;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid #d9d9d9;
+    border-radius: 20px;
 }
 
 .form_input {
     font-size: 0.6rem;
     color: grey;
+    
+}
+
+.form_input >input:hover {
+    border: 2px solid #b9b9b9;
+    border-top-color: #a0a0a0;
+}
+
+.form_input >input:focus {
+    outline: none;
+    border: 2px solid #4d90fe;
 }
 
 .form_forgot {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     align-self: center;
     margin-bottom: 1rem;
     transition: all 0.2s;
@@ -106,16 +122,15 @@
 .log_in_button {
     justify-self: flex-end;
     margin-bottom: 1rem;
-    border-radius: 10rem;
-    padding: 0.5rem 0.8rem;
-    background-color: #8f0a69;
+    padding: 0.5rem 0.9rem;
+    background-color: #30475E;
     color: white;
     box-shadow: 0rem 0.4rem 1rem rgba(158, 158,158, 0.6);
 }
 
 .log_in_button:active {
     transform: translateY(0.2rem);
-    box-shadow: 0rem 4rem 0.4rem #8f0a69;
+    box-shadow: 0rem 4rem 0.4rem #7E8A97;
 }
 
 .visible {
