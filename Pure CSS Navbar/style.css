@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Rubik:wght@400;500&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  
+}
+
+nav{
+  height: 70px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #BAABDA;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+h1 {
+  font-family: 'Rubik', sans-serif;
+  padding: 20px;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+  margin: 1rem;
+}
+
+a {
+  font-family: 'Rubik', sans-serif;
+  color: white;
+}
+
+@keyframes flip {
+  0%,80% {
+    transform: rotateX(360deg) 
+  }
+}
