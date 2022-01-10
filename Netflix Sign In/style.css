@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Rubik:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    height: 500px;
+    width: 300px;
+    background-color: black;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+}
+
+.img-box {
+    position: absolute;
+    top: -60px;
+    width: 100%;
+    height: 300px;
+    background: url("https://www.looper.com/img/gallery/15-best-movies-on-netflix-right-now/intro-1602263596.jpg") center/cover;
+}
+
+.box::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(to top, #000000 65%, transparent)
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+form {
+    width: 260px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+form input, button {
+    border: none;
+    height: 40px;
+    outline: none;
+    border-radius: 2px;
+}
+
+form input{
+    width: 260px;
+    margin: 5px 0;
+    background: #333333;
+    padding: 0 10px;
+}
+
+form button {
+    background: #e50813;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.content a {
+    width: 260px;
+    color: #737373;
+    font-size: 13px;
+    text-decoration: none;
+}
+
