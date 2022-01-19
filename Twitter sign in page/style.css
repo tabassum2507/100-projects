@@ -18,14 +18,18 @@ body {
     left: 50%;
     transform: translate( -50%, -50%);
     background-color: #fff;
-    height: 550px;
-    width: 450px;
+    height: 450px;
+    width: 400px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     display: flex;
     align-items: center;
     justify-content: center;
     
+}
+
+button {
+    cursor: pointer;
 }
 
 .inner-box, .inner-box .btn {
@@ -63,4 +67,37 @@ body {
     margin: 0 .5rem;
 }
 
-.
+.input-space {
+    display: block;
+    position:relative;
+    width: 300px;
+    height: 35px;
+    outline: none;
+    border: 1px solid rgb(211, 210, 210);
+    border-radius: 4px;
+    padding-left: 10px;
+
+}
+
+.inner-box input::placeholder {
+    font-size: 0.8rem;
+}
+
+.inner-box input:focus {
+    border: 2px solid #00acee;
+}
+
+.inner-box .button-1 {
+    background-color: #121212;
+    color: #fff;
+} 
+
+.last-line {
+    font-size: .7rem;
+    color: rgb(138, 136, 136);
+}
+
+.last-line a {
+    text-decoration: none;
+    color: #00acee;
+}
