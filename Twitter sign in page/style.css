@@ -6,9 +6,16 @@
 }
 
 .box {
+    height: 70%;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
 
 .inner-box {
     display: flex;
+    flex-direction: column;
+    justify-content: space-j;
 }
