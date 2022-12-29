@@ -1,13 +1,17 @@
-const panels = document.querySelectorAll('.panel')
+const panels = document.querySelectorAll('.panel') 
 
+
+//adding active class to active div
 panels.forEach(panel => {
     panel.addEventListener('click', () => {
-        removeActiveClasses()
+        removeActiveClasses();
         panel.classList.add('active')
     })
 })
 
-function removeActiveClasses() {
+//removing active class
+
+function removeActiveClasses(){
     panels.forEach(panel => {
         panel.classList.remove('active')
     })
