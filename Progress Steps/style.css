@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F5EDCE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;    
+}
+
+.container{
+    text-align: center;
+}
+
+.progress-container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 100%;
+    width: 350px;
+}
+
+.progress-container::before{
+    content: '';
+    background-color: #ECC5FB;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 8px;
+    width: 100%;
+    z-index: -1;
+
+}
+
+.progress{
+    background-color: #9D3C72;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 8px;
+    width: 0%;
+    z-index: -1;
+    transition: 0.4s ease;
+}
+
+.number{
+    background-color: #fff;
+    color: #9D3C72;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #ECC5FB;
+    transition: 0.7s ease;
+}
+
+.number.active{
+    border-color: #9D3C72;
+}
+
+.btn{
+    background-color: #9D3C72;
+    color: #fff;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 8px 30px ;
+    margin: 5px;
+    font-size: 14px;
+
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
+
+.btn:focus{
+    outline: 0;
+}
+
+.btn:disabled{
+    background-color: #ECC5FB;
+    cursor: not-allowed;
+}
